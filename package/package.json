@@ -1,0 +1,27 @@
+{
+  "name": "@nagisham/shaper",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "",
+  "keywords": [
+    "jsx",
+    "jsx-runtime",
+    "DOM"
+  ],
+  "author": "Evgeniy Nage Nikulin (https://github.com/at-nage)",
+  "homepage": "https://github.com/nagisham/shaper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nagisham/shaper.git"
+  },
+  "license": "MIT",
+  "main": "shaper/index.js",
+  "types": "shaper/index.d.ts",
+  "scripts": {
+    "push": "npm publish --access=public"
+  },
+  "dependencies": {
+    "@nagisham/standard": "^0.1.0",
+    "@nagisham/syren": "^0.1.0"
+  }
+}
