@@ -7,7 +7,10 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",    
+    "build": "vite build",
+    "start": "vite preview --host --port 3000",
+    "docker:restart": "docker stop todo && docker rm todo && docker build -t to-do . && docker run -d --name todo -p 3000:3000 to-do"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",

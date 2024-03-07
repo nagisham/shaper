@@ -1,29 +1,29 @@
-import path from 'path';
+import path from "path";
 
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: path.resolve('./'),
+  root: path.resolve("./"),
   resolve: {
     alias: {
-      src: path.resolve('./src'),
+      src: path.resolve("./src"),
     },
   },
   build: {
-    outDir: path.resolve('./dist'),
+    outDir: path.resolve("./dist"),
     emptyOutDir: true,
     rollupOptions: {
       output: {
         manualChunks: false,
-        entryFileNames: 'src/index.tsx',
+        entryFileNames: "src/index.js",
       },
     },
   },
   esbuild: {
-    jsxFactory: 'h',
-    jsxFragment: 'f',
+    jsxFactory: "h",
+    jsxFragment: "f",
   },
   server: {
-    port: '3000',
+    port: "3000",
   },
 });
